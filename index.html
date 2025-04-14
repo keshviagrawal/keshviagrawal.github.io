@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keshvi Agrawal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Basic navbar styles */
+    .navbar {
+      width: 100%;
+      background-color: #1f1f1f;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar h1 {
+      font-size: 22px;
+      margin: 0;
+      font-weight: 600;
+      color: #f1c40f;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #f1c40f;
+    }
+
+    body {
+      padding-top: 80px; /* so content doesn't hide behind navbar */
+    }
+
+    /* LinkedIn and Instagram icons */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.1);
+  }
+
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <h1>Keshvi's Portfolio</h1>
+    <div class="nav-links">
+      <a href="#intro">Intro</a>
+      <a href="#birthplace">Birthplace</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#cv">CV</a>
+      <a href="#analyzer">Text Analyzer</a>
+    </div>
+  </nav>
+
+  <!-- Section 1: Intro
+  <div id="intro" class="container intro-section">
+    <div class="photo-section">
+      <img id="profilePic" src="/assets/images/profile2.jpeg" alt="Keshvi's Profile Photo" class="profile-pic"/>
+    </div>
+    <div class="text-section">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="quote">"Curious mind, constant learner, and a builder at heart."</p>
+      <p class="about">
+        Hi! I'm Keshvi Agrawal, a passionate developer and enthusiastic learner. I love exploring the intersections of technology, design, and human impact. From diving deep into systems to building creative projects, I enjoy solving real-world problems and constantly challenging myself to grow.
+      </p>
+    </div>
+  </div> -->
+
+  <div id="intro" class="container intro-section">
+    <div class="photo-section">
+      <img id="profilePic" src="/assets/images/profile2.jpeg" alt="Keshvi's Profile Photo" class="profile-pic"/>
+    </div>
+    <div class="text-section">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="quote">"Building with purpose, learning with passion."</p>
+      <p class="about">
+        Hi, I'm Keshvi Agrawal, a developer and lifelong learner. I enjoy building projects that solve real-world problems and exploring new technologies. With a passion for continuous growth, I love challenging myself to learn and create.
+      </p>
+      <!-- Social Media Links -->
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/feed/" target="_blank">
+          <img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kNS0xMF8xLnBuZw.png" alt="LinkedIn" />
+        </a>
+        <a href="https://www.instagram.com/?hl=en" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" />
+        </a>
+        
+        <a href="mailto:keshviagrawal11@gmail.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Section 2: Birthplace -->
+  <div id="birthplace" class="container birthplace">
+    <h1>My Birthplace: Mathura...</h1>
+    <p class="intro">
+      Welcome to my hometown – <strong>Mathura</strong>, a sacred city in Uttar Pradesh, India. Known as the birthplace of Lord Krishna, Mathura is rich in culture, devotion, and heritage. 
+      The city’s ghats, temples, and vibrant festivals like Holi and Janmashtami make it an unforgettable place steeped in divinity and colors.
+    </p>
+
+    <div class="slider-fade">
+      <img class="fade-img active" src="/assets/images/i1.jpeg" alt="Mathura Image 1" />
+      <img class="fade-img" src="/assets/images/i2.jpeg" alt="Mathura Image 2" />
+      <img class="fade-img" src="/assets/images/i3.jpeg" alt="Mathura Image 3" />
+      <img class="fade-img" src="/assets/images/i4.jpeg" alt="Mathura Image 4" />
+      <img class="fade-img" src="/assets/images/i5.jpeg" alt="Mathura Image 5" />
+    </div>
+  </div>
+
+  <!-- Section 3: Education -->
+  <div id="education" class="container education-section">
+    <h1>My Educational Journey</h1>
+
+    <div class="education-item">
+      <div class="education-image">
+        <img src="/assets/images/school.jpeg" alt="Sacred Heart Convent School" />
+      </div>
+      <div class="education-text">
+        <h2>Sacred Heart Convent Higher Secondary School, Mathura (ICSE Board)</h2>
+        <p>
+          I completed my schooling at Sacred Heart Convent, Mathura, where I studied under the ICSE board. The school provided a nurturing environment that emphasized academic excellence and holistic development. It was here that I cultivated my love for learning and discovered my passion for technology and problem-solving.
+        </p>
+        <br>
+        <a href="https://www.sacredheartmathura.com/" target="_blank" class="explore-link">Explore More</a>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-image">
+        <img src="/assets/images/coaching.jpeg" alt="JKS Coaching" />
+      </div>
+      <div class="education-text">
+        <h2>JKS (JEE Coaching)</h2>
+        <p>
+          To prepare for the JEE exam, I enrolled at JKS Coaching, where I honed my problem-solving and analytical skills. The rigorous training and guidance I received helped me build a strong foundation in physics, chemistry, and mathematics, crucial for succeeding in the competitive JEE exam.
+        </p>
+        <br>
+        <a href="https://jksacademy.com/" target="_blank" class="explore-link">Explore More</a>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-image">
+        <img src="/assets/images/college.jpeg" alt="IIIT Hyderabad" />
+      </div>
+      <div class="education-text">
+        <h2>IIIT Hyderabad</h2>
+        <p>
+          I am currently pursuing my undergraduate studies at the prestigious International Institute of Information Technology, Hyderabad (IIIT-H). IIIT-H has provided me with an incredible environment to explore my passion for technology, work on cutting-edge research, and collaborate with some of the brightest minds in the field.
+        </p>
+        <br>
+        <a href="https://www.iiit.ac.in/" target="_blank" class="explore-link">Explore More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Technical Skills -->
+  <div id="skills" class="container skills-section">
+    <h1>Technical Skills</h1>
+    <div class="skills-grid">
+      <div class="skills-card">
+        <h2>Database <span class="level medium">Medium</span></h2>
+        <span class="skill-chip">MongoDB</span>
+        <span class="skill-chip">MySQL</span>
+        <span class="skill-chip">SQL</span>
+      </div>
+
+      <div class="skills-card">
+        <h2>Frontend <span class="level high">High</span></h2>
+        <span class="skill-chip">HTML</span>
+        <span class="skill-chip">CSS</span>
+        <span class="skill-chip">JavaScript</span>
+        <span class="skill-chip">React</span>
+      </div>
+
+      <div class="skills-card">
+        <h2>Backend <span class="level low">Low</span></h2>
+        <span class="skill-chip">Node.js</span>
+        <span class="skill-chip">Django</span>
+      </div>
+
+      <div class="skills-card">
+        <h2>DSA / CP <span class="level medium">Medium</span></h2>
+        <span class="skill-chip">Data Structures & Algorithms</span>
+        <span class="skill-chip">LeetCode</span>
+        <span class="skill-chip">Codeforces</span>
+      </div>
+
+      <div class="skills-card">
+        <h2>IoT <span class="level medium">Medium</span></h2>
+        <span class="skill-chip">ESP32</span>
+        <span class="skill-chip">MQTT</span>
+        <span class="skill-chip">Sensor Integration</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: CV Link -->
+  <div id="cv" class="container cv-section">
+    <h1>Download My CV</h1>
+    <p>If you'd like to know more about my background, experience, and skills, feel free to download my CV:</p>
+    <a href="assets/documents/cv.pdf" target="_blank" class="cv-link">
+      <button class="btn-download">Download CV</button>
+    </a>
+  </div>
+
+  <!-- Section: Text Analyzer -->
+  <div id="analyzer" class="container" style="margin: 40px auto; max-width: 800px;">
+    <h2>Text Analyzer</h2>
+    <textarea id="textInput" rows="20" style="width: 100%; padding: 10px;" placeholder="Paste your text here (10,000+ words)..."></textarea>
+    <button onclick="analyzeText()" style="margin-top: 15px; padding: 10px 20px;">Analyze</button>
+    <div id="output" style="margin-top: 30px;"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+  <script src="textAnalyzer.js"></script>
+  <script>
+    const profilePic = document.getElementById("profilePic");
+
+    const image1 = "/assets/images/profile1.jpeg";
+    const image2 = "/assets/images/profile2.jpeg";
+
+    profilePic.addEventListener("click", () => {
+      profilePic.src = profilePic.src.includes("profile1.jpeg") ? image2 : image1;
+    });
+
+    // Fading slider for Mathura section
+    const fadeImages = document.querySelectorAll(".fade-img");
+    let currentIndex = 0;
+
+    setInterval(() => {
+      fadeImages[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % fadeImages.length;
+      fadeImages[currentIndex].classList.add("active");
+    }, 4000);
+  </script>
+
+</body>
+</html>
