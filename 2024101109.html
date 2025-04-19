@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2024101109 - A-Frame Scene</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Cone placed on the mat -->
+      <a-cone position="0 0.5 -3" radius-bottom="0.7" height="1" color="#4CC3D9"></a-cone>
+
+      <!-- Torus placed above the cone -->
+      <a-torus position="0 1.5 -3" radius="0.5" radius-tubular="0.2" color="#FFC65D"></a-torus>
+
+      <!-- Tetrahedron placed above the torus, with a new color -->
+      <a-entity geometry="primitive: tetrahedron" position="0 2.5 -3" scale="1 1 1" color="#FF5733"></a-entity>
+
+      <!-- Ground Plane -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
+
+
+
+
+
+<!-- 
+we were not told abt the original blue box... hence i removed it and placed 3 diff shapes -->
